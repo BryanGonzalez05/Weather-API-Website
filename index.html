@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>What Is The Weather!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="titleCase"><h1>What Is The Weather!</h1></div>
+    <div class="tabcontainer">
+        <button class="tabPlus">+</button>
+        <button class="clearButton" onclick="clearTabs()">Clear Tabs</button>
+    </div>
+
+    <h2 id="warningText" class="hidden">Max tab avaliable is 4!</h2>
+    <form id="searchBar">
+        <h2>Seach State or Country:</h2>
+        <input type="text" id="inputbox" placeholder="Type Here">
+        <button id="inputButton">Enter</button>
+    </form>
+
+    <div class="displayCase">
+        <h1 id="displayLocation"></h1>
+        <h2 id="displayTemperature"></h2>
+        <h3 id="displayWeather"></h3>
+        <h3 id="displayWindSpeed"></h3>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

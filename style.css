@@ -1,0 +1,172 @@
+body{
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.titleCase{
+    background-color: rgb(212, 255, 255);
+    width: 100%;
+    text-align: start;
+    padding-left: 50px;
+    color: black;
+}
+
+.tabcontainer{
+    background-color: rgb(10, 10, 120);
+    width: 100%;
+    min-height: 50px;
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tab{
+    height: 50px;
+    margin-inline: 5px;
+    margin-bottom: 5px;
+    padding-inline: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgba(3, 247, 255, 0.649);
+    color: aliceblue;
+}
+
+.remove{
+    background-color: rgba(3, 175, 255, 0.312) ;
+    border: none;
+    margin-left: 7px;
+    cursor: pointer;
+    border-radius: 10px;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.remove:hover{
+    box-shadow: 0 0 0 1px white;
+}
+
+.tabPlus{
+    background-color: rgba(3, 175, 255, 0.649);
+    height: 25px;
+    width: 25px;
+    margin-inline: 5px;
+    padding: 5px 5px;
+    border-radius: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: large;
+    cursor: pointer;
+}
+
+.tabPlus:hover{
+    border: 1px solid black;
+}
+
+.clearButton{
+    background-color: rgb(199, 229, 255);
+    border:none;
+    padding: 10px 10px;
+    margin-inline: 5px;
+    margin-bottom: 3px;
+    color: rgba(1, 92, 95, 0.649);
+}
+
+.clearButton:hover{
+    background-color: rgb(186, 223, 254)
+}
+.clearButton:active{
+    background-color: rgb(211, 235, 255)
+}
+
+#searchBar{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(235, 235, 235);
+    border: 5px solid grey;
+    border-radius: 30px;
+    margin-block: 20px;
+    padding-inline: 10px;
+    width: 500px;
+}
+
+#inputbox{
+    padding: 10px 5px;
+    font-size: 15px;
+}
+
+#inputButton{
+    padding: 10px 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 0 1px rgb(82, 82, 82);
+    cursor: pointer;
+}
+
+.displayCase{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom,rgb(0, 145, 255),rgb(0, 255, 60));
+    width: 350px;
+    height: 350px;
+    margin-block: 10px;
+    padding-block: 20px;
+    border-radius: 20px;
+    color: white;
+}
+
+.hidden{
+    display: none;
+}
+
+.warning{
+    margin: 0;
+    margin-top: 10px;
+    color: red;
+}
+
+.tab.active{
+    box-shadow: 0 0 0 1px white;
+}
+
+@media screen and (max-width: 800px){
+    .remove{
+        height: 20px;
+        width: 20px;
+    }
+
+    #searchBar h2{
+        font-size: 20px;
+    }
+
+    #inputbox{
+        padding: 5px;
+    }
+
+    #searchBar{
+        padding: 0;
+        width: 470px;
+    }
+
+    #inputButton{
+        padding: 5px 5px;
+    }
+}
